@@ -18,11 +18,11 @@
     "ruleTemplate" : null,
     "statusName" : null,
     "ruleCreatedBy" : 7,
-    "ruleModifiedBy" : 0,
+    "ruleModifiedBy" : 7,
     "subjectAreaKey" : 0,
     "ruleStatus" : 1,
     "ruleCreateDate" : "2024-01-03 00:00:00",
-    "ruleModifiedDate" : null,
+    "ruleModifiedDate" : "2024-01-03 00:00:00",
     "enterpriseErrorCode" : "",
     "legalEntityId" : 1,
     "subjectAreaName" : null,
@@ -54,7 +54,7 @@
     "isRuleExit" : null,
     "ruleCreatedByName" : "admin",
     "projectName" : "Sample Project",
-    "ruleModifiedByName" : null,
+    "ruleModifiedByName" : "admin",
     "ruleClassId" : 470,
     "successBody" : null,
     "failureBody" : null,
@@ -87,7 +87,7 @@
       "classObjName" : "ICE_1704308530240",
       "queryBuilderXML" : null,
       "connId" : 0,
-      "resultType" : "a-b,b-a,expression",
+      "resultType" : "a-b,b-a",
       "connName" : null,
       "connUrl" : null,
       "connFullUrl" : null,
@@ -96,15 +96,295 @@
       "ruleName" : null,
       "ruleParameter" : null,
       "srcTrgMaplist" : [ {
-        "colMapId" : 561,
-        "srcColId" : 503,
-        "trgColId" : 532,
+        "colMapId" : 678,
+        "srcColId" : 620,
+        "trgColId" : 649,
         "colMapType" : "join",
         "srcColName" : "rule_id",
         "tgtColName" : "rule_id",
         "colMapExpr" : "rule_id=rule_id",
         "srcTrgColMapVisible" : 1,
         "displayIndex" : 29
+      }, {
+        "colMapId" : 679,
+        "srcColId" : 621,
+        "trgColId" : 650,
+        "colMapType" : "join",
+        "srcColName" : "folder_id",
+        "tgtColName" : "folder_id",
+        "colMapExpr" : "folder_id=folder_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 30
+      }, {
+        "colMapId" : 680,
+        "srcColId" : 622,
+        "trgColId" : 651,
+        "colMapType" : "join",
+        "srcColName" : "rule_code",
+        "tgtColName" : "rule_code",
+        "colMapExpr" : "rule_code=rule_code",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 31
+      }, {
+        "colMapId" : 681,
+        "srcColId" : 623,
+        "trgColId" : 652,
+        "colMapType" : "join",
+        "srcColName" : "rule_name",
+        "tgtColName" : "rule_name",
+        "colMapExpr" : "rule_name=rule_name",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 32
+      }, {
+        "colMapId" : 682,
+        "srcColId" : 624,
+        "trgColId" : 653,
+        "colMapType" : "join",
+        "srcColName" : "rule_desc",
+        "tgtColName" : "rule_desc",
+        "colMapExpr" : "rule_desc=rule_desc",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 33
+      }, {
+        "colMapId" : 683,
+        "srcColId" : 625,
+        "trgColId" : 654,
+        "colMapType" : "join",
+        "srcColName" : "rule_purpose",
+        "tgtColName" : "rule_purpose",
+        "colMapExpr" : "rule_purpose=rule_purpose",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 34
+      }, {
+        "colMapId" : 684,
+        "srcColId" : 626,
+        "trgColId" : 655,
+        "colMapType" : "join",
+        "srcColName" : "template_id",
+        "tgtColName" : "template_id",
+        "colMapExpr" : "template_id=template_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 35
+      }, {
+        "colMapId" : 685,
+        "srcColId" : 627,
+        "trgColId" : 656,
+        "colMapType" : "join",
+        "srcColName" : "rule_created_by_id",
+        "tgtColName" : "rule_created_by_id",
+        "colMapExpr" : "rule_created_by_id=rule_created_by_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 36
+      }, {
+        "colMapId" : 686,
+        "srcColId" : 628,
+        "trgColId" : 657,
+        "colMapType" : "join",
+        "srcColName" : "rule_last_modify_by_id",
+        "tgtColName" : "rule_last_modify_by_id",
+        "colMapExpr" : "rule_last_modify_by_id=rule_last_modify_by_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 37
+      }, {
+        "colMapId" : 687,
+        "srcColId" : 629,
+        "trgColId" : 658,
+        "colMapType" : "join",
+        "srcColName" : "rule_create_dttm",
+        "tgtColName" : "rule_create_dttm",
+        "colMapExpr" : "rule_create_dttm=rule_create_dttm",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 38
+      }, {
+        "colMapId" : 688,
+        "srcColId" : 630,
+        "trgColId" : 659,
+        "colMapType" : "join",
+        "srcColName" : "rule_last_modify_dttm",
+        "tgtColName" : "rule_last_modify_dttm",
+        "colMapExpr" : "rule_last_modify_dttm=rule_last_modify_dttm",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 39
+      }, {
+        "colMapId" : 689,
+        "srcColId" : 631,
+        "trgColId" : 660,
+        "colMapType" : "join",
+        "srcColName" : "enterprise_error_code",
+        "tgtColName" : "enterprise_error_code",
+        "colMapExpr" : "enterprise_error_code=enterprise_error_code",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 40
+      }, {
+        "colMapId" : 690,
+        "srcColId" : 632,
+        "trgColId" : 661,
+        "colMapType" : "join",
+        "srcColName" : "legal_entity_id",
+        "tgtColName" : "legal_entity_id",
+        "colMapExpr" : "legal_entity_id=legal_entity_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 41
+      }, {
+        "colMapId" : 691,
+        "srcColId" : 633,
+        "trgColId" : 662,
+        "colMapType" : "join",
+        "srcColName" : "exec_node",
+        "tgtColName" : "exec_node",
+        "colMapExpr" : "exec_node=exec_node",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 42
+      }, {
+        "colMapId" : 692,
+        "srcColId" : 634,
+        "trgColId" : 663,
+        "colMapType" : "join",
+        "srcColName" : "rule_type",
+        "tgtColName" : "rule_type",
+        "colMapExpr" : "rule_type=rule_type",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 43
+      }, {
+        "colMapId" : 693,
+        "srcColId" : 635,
+        "trgColId" : 664,
+        "colMapType" : "join",
+        "srcColName" : "success_mail",
+        "tgtColName" : "success_mail",
+        "colMapExpr" : "success_mail=success_mail",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 44
+      }, {
+        "colMapId" : 694,
+        "srcColId" : 636,
+        "trgColId" : 665,
+        "colMapType" : "join",
+        "srcColName" : "failure_mail",
+        "tgtColName" : "failure_mail",
+        "colMapExpr" : "failure_mail=failure_mail",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 45
+      }, {
+        "colMapId" : 695,
+        "srcColId" : 637,
+        "trgColId" : 666,
+        "colMapType" : "join",
+        "srcColName" : "success_header",
+        "tgtColName" : "success_header",
+        "colMapExpr" : "success_header=success_header",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 46
+      }, {
+        "colMapId" : 696,
+        "srcColId" : 638,
+        "trgColId" : 667,
+        "colMapType" : "join",
+        "srcColName" : "failure_header",
+        "tgtColName" : "failure_header",
+        "colMapExpr" : "failure_header=failure_header",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 47
+      }, {
+        "colMapId" : 697,
+        "srcColId" : 639,
+        "trgColId" : 668,
+        "colMapType" : "join",
+        "srcColName" : "success_attachment_flag",
+        "tgtColName" : "success_attachment_flag",
+        "colMapExpr" : "success_attachment_flag=success_attachment_flag",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 48
+      }, {
+        "colMapId" : 698,
+        "srcColId" : 640,
+        "trgColId" : 669,
+        "colMapType" : "join",
+        "srcColName" : "failure_attachment_flag",
+        "tgtColName" : "failure_attachment_flag",
+        "colMapExpr" : "failure_attachment_flag=failure_attachment_flag",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 49
+      }, {
+        "colMapId" : 699,
+        "srcColId" : 641,
+        "trgColId" : 670,
+        "colMapType" : "join",
+        "srcColName" : "parameter_id",
+        "tgtColName" : "parameter_id",
+        "colMapExpr" : "parameter_id=parameter_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 50
+      }, {
+        "colMapId" : 700,
+        "srcColId" : 642,
+        "trgColId" : 671,
+        "colMapType" : "join",
+        "srcColName" : "rule_status",
+        "tgtColName" : "rule_status",
+        "colMapExpr" : "rule_status=rule_status",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 51
+      }, {
+        "colMapId" : 701,
+        "srcColId" : 643,
+        "trgColId" : 672,
+        "colMapType" : "join",
+        "srcColName" : "running_status",
+        "tgtColName" : "running_status",
+        "colMapExpr" : "running_status=running_status",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 52
+      }, {
+        "colMapId" : 702,
+        "srcColId" : 644,
+        "trgColId" : 673,
+        "colMapType" : "join",
+        "srcColName" : "success_body",
+        "tgtColName" : "success_body",
+        "colMapExpr" : "success_body=success_body",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 53
+      }, {
+        "colMapId" : 703,
+        "srcColId" : 645,
+        "trgColId" : 674,
+        "colMapType" : "join",
+        "srcColName" : "failure_body",
+        "tgtColName" : "failure_body",
+        "colMapExpr" : "failure_body=failure_body",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 54
+      }, {
+        "colMapId" : 704,
+        "srcColId" : 646,
+        "trgColId" : 675,
+        "colMapType" : "join",
+        "srcColName" : "template_id_fail",
+        "tgtColName" : "template_id_fail",
+        "colMapExpr" : "template_id_fail=template_id_fail",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 55
+      }, {
+        "colMapId" : 705,
+        "srcColId" : 647,
+        "trgColId" : 676,
+        "colMapType" : "join",
+        "srcColName" : "report_id",
+        "tgtColName" : "report_id",
+        "colMapExpr" : "report_id=report_id",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 56
+      }, {
+        "colMapId" : 706,
+        "srcColId" : 648,
+        "trgColId" : 677,
+        "colMapType" : "join",
+        "srcColName" : "summary_variable",
+        "tgtColName" : "summary_variable",
+        "colMapExpr" : "summary_variable=summary_variable",
+        "srcTrgColMapVisible" : 1,
+        "displayIndex" : 57
       } ],
       "exprlist" : [ {
         "exprID" : 562,
@@ -753,77 +1033,77 @@
       } ],
       "derivedexprlist" : null,
       "paramsVOLst" : [ {
-        "ruleClsPropID" : 491,
+        "ruleClsPropID" : 604,
         "paramId" : 9,
         "paramMethod" : "setSourceObject",
         "paramValue" : "GetData11",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 492,
+        "ruleClsPropID" : 605,
         "paramId" : 10,
         "paramMethod" : "setTargetObject",
         "paramValue" : "GetData21",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 493,
+        "ruleClsPropID" : 606,
         "paramId" : 798,
         "paramMethod" : "setEngineType",
         "paramValue" : "V8",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 494,
+        "ruleClsPropID" : 607,
         "paramId" : 22,
         "paramMethod" : "setMaxRowCount",
         "paramValue" : "-1",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 495,
+        "ruleClsPropID" : 608,
         "paramId" : 23,
         "paramMethod" : "setMaxErrorCount",
         "paramValue" : "500",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 496,
+        "ruleClsPropID" : 609,
         "paramId" : 24,
         "paramMethod" : "setShowErrorData",
         "paramValue" : "Yes",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 497,
+        "ruleClsPropID" : 610,
         "paramId" : 72,
         "paramMethod" : "setTimeOut",
         "paramValue" : "",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 498,
+        "ruleClsPropID" : 611,
         "paramId" : 73,
         "paramMethod" : "setLoadDataFlag",
         "paramValue" : "No",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 499,
+        "ruleClsPropID" : 612,
         "paramId" : 465,
         "paramMethod" : "setReportXlsx",
         "paramValue" : "No",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 500,
+        "ruleClsPropID" : 613,
         "paramId" : 530,
         "paramMethod" : "setThresholdFlag",
         "paramValue" : "false",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 501,
+        "ruleClsPropID" : 614,
         "paramId" : 531,
         "paramMethod" : "setThresholdExpression",
         "paramValue" : "",
@@ -849,7 +1129,7 @@
       "classObjName" : "ICE_1704308530240",
       "queryBuilderXML" : null,
       "connId" : 468,
-      "resultType" : "a-b,b-a,expression",
+      "resultType" : "a-b,b-a",
       "connName" : null,
       "connUrl" : null,
       "connFullUrl" : null,
@@ -861,13 +1141,13 @@
       "exprlist" : [ ],
       "derivedexprlist" : null,
       "paramsVOLst" : [ {
-        "ruleClsPropID" : 473,
+        "ruleClsPropID" : 590,
         "paramId" : 6,
         "paramMethod" : "setQueryString",
         "paramValue" : "select * from DBO.ICE_RULE",
         "srcTrgTbllist" : [ {
-          "srcTgtColId" : 503,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 620,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -877,8 +1157,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 504,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 621,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "folder_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -888,8 +1168,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 505,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 622,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_code",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -899,8 +1179,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 506,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 623,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_name",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -910,8 +1190,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 507,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 624,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_desc",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -921,8 +1201,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 508,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 625,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_purpose",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -932,8 +1212,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 509,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 626,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "template_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -943,8 +1223,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 510,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 627,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_created_by_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -954,8 +1234,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 511,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 628,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_last_modify_by_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -965,8 +1245,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 512,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 629,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_create_dttm",
           "srcTrgColDataType" : "datetime",
           "colFlagType" : "src",
@@ -976,8 +1256,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 513,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 630,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_last_modify_dttm",
           "srcTrgColDataType" : "datetime",
           "colFlagType" : "src",
@@ -987,8 +1267,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 514,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 631,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "enterprise_error_code",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -998,8 +1278,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 515,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 632,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "legal_entity_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1009,8 +1289,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 516,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 633,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "exec_node",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1020,8 +1300,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 517,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 634,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_type",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1031,8 +1311,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 518,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 635,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "success_mail",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1042,8 +1322,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 519,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 636,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "failure_mail",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1053,8 +1333,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 520,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 637,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "success_header",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1064,8 +1344,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 521,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 638,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "failure_header",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1075,8 +1355,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 522,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 639,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "success_attachment_flag",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1086,8 +1366,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 523,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 640,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "failure_attachment_flag",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1097,8 +1377,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 524,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 641,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "parameter_id",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1108,8 +1388,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 525,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 642,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "rule_status",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1119,8 +1399,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 526,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 643,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "running_status",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1130,8 +1410,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 527,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 644,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "success_body",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1141,8 +1421,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 528,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 645,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "failure_body",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1152,8 +1432,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 529,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 646,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "template_id_fail",
           "srcTrgColDataType" : "int",
           "colFlagType" : "src",
@@ -1163,8 +1443,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 530,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 647,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "report_id",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "src",
@@ -1174,8 +1454,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 531,
-          "ruleClsPropId" : 473,
+          "srcTgtColId" : 648,
+          "ruleClsPropId" : 590,
           "srcTrgColName" : "summary_variable",
           "srcTrgColDataType" : "varbinary",
           "colFlagType" : "src",
@@ -1187,42 +1467,42 @@
         } ],
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 475,
+        "ruleClsPropID" : 591,
         "paramId" : 16,
         "paramMethod" : "setConnId",
         "paramValue" : "467",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 476,
+        "ruleClsPropID" : 592,
         "paramId" : 337,
         "paramMethod" : "setIsStoredProcedure",
         "paramValue" : "false",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 477,
+        "ruleClsPropID" : 593,
         "paramId" : 491,
         "paramMethod" : "setDeferredSort",
         "paramValue" : "false",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 478,
+        "ruleClsPropID" : 594,
         "paramId" : 84,
         "paramMethod" : "setOrderByStr",
-        "paramValue" : "1",
+        "paramValue" : "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
         "srcTrgTbllist" : [ ],
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 480,
+        "ruleClsPropID" : 595,
         "paramId" : 82,
         "paramMethod" : "setAppendOrderBy",
         "paramValue" : "true",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 481,
+        "ruleClsPropID" : 596,
         "paramId" : 83,
         "paramMethod" : "setColumnsMInfo",
         "paramValue" : "rule_id^~^4^~^int^~^10^~^1$~$folder_id^~^4^~^int^~^10^~^2$~$rule_code^~^12^~^varchar^~^200^~^3$~$rule_name^~^12^~^varchar^~^200^~^4$~$rule_desc^~^12^~^varchar^~^4000^~^5$~$rule_purpose^~^12^~^varchar^~^4000^~^6$~$template_id^~^4^~^int^~^10^~^7$~$rule_created_by_id^~^4^~^int^~^10^~^8$~$rule_last_modify_by_id^~^4^~^int^~^10^~^9$~$rule_create_dttm^~^93^~^datetime^~^23^~^10$~$rule_last_modify_dttm^~^93^~^datetime^~^23^~^11$~$enterprise_error_code^~^12^~^varchar^~^20^~^12$~$legal_entity_id^~^4^~^int^~^10^~^13$~$exec_node^~^12^~^varchar^~^10^~^14$~$rule_type^~^12^~^varchar^~^50^~^15$~$success_mail^~^12^~^varchar^~^4000^~^16$~$failure_mail^~^12^~^varchar^~^4000^~^17$~$success_header^~^12^~^varchar^~^2000^~^18$~$failure_header^~^12^~^varchar^~^2000^~^19$~$success_attachment_flag^~^4^~^int^~^10^~^20$~$failure_attachment_flag^~^4^~^int^~^10^~^21$~$parameter_id^~^12^~^varchar^~^450^~^22$~$rule_status^~^4^~^int^~^10^~^23$~$running_status^~^4^~^int^~^10^~^24$~$success_body^~^12^~^varchar^~^4000^~^25$~$failure_body^~^12^~^varchar^~^4000^~^26$~$template_id_fail^~^4^~^int^~^10^~^27$~$report_id^~^12^~^varchar^~^4000^~^28$~$summary_variable^~^-3^~^varbinary^~^2147483647^~^29",
@@ -1248,7 +1528,7 @@
       "classObjName" : "ICE_1704308530240",
       "queryBuilderXML" : null,
       "connId" : 468,
-      "resultType" : "a-b,b-a,expression",
+      "resultType" : "a-b,b-a",
       "connName" : null,
       "connUrl" : null,
       "connFullUrl" : null,
@@ -1260,13 +1540,13 @@
       "exprlist" : [ ],
       "derivedexprlist" : null,
       "paramsVOLst" : [ {
-        "ruleClsPropID" : 482,
+        "ruleClsPropID" : 597,
         "paramId" : 6,
         "paramMethod" : "setQueryString",
         "paramValue" : "select * from DBO.ICE_RULE",
         "srcTrgTbllist" : [ {
-          "srcTgtColId" : 532,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 649,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1276,8 +1556,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 533,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 650,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "folder_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1287,8 +1567,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 534,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 651,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_code",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1298,8 +1578,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 535,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 652,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_name",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1309,8 +1589,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 536,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 653,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_desc",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1320,8 +1600,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 537,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 654,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_purpose",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1331,8 +1611,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 538,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 655,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "template_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1342,8 +1622,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 539,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 656,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_created_by_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1353,8 +1633,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 540,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 657,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_last_modify_by_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1364,8 +1644,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 541,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 658,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_create_dttm",
           "srcTrgColDataType" : "datetime",
           "colFlagType" : "tgt",
@@ -1375,8 +1655,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 542,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 659,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_last_modify_dttm",
           "srcTrgColDataType" : "datetime",
           "colFlagType" : "tgt",
@@ -1386,8 +1666,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 543,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 660,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "enterprise_error_code",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1397,8 +1677,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 544,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 661,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "legal_entity_id",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1408,8 +1688,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 545,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 662,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "exec_node",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1419,8 +1699,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 546,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 663,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_type",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1430,8 +1710,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 547,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 664,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "success_mail",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1441,8 +1721,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 548,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 665,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "failure_mail",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1452,8 +1732,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 549,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 666,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "success_header",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1463,8 +1743,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 550,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 667,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "failure_header",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1474,8 +1754,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 551,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 668,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "success_attachment_flag",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1485,8 +1765,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 552,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 669,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "failure_attachment_flag",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1496,8 +1776,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 553,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 670,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "parameter_id",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1507,8 +1787,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 554,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 671,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "rule_status",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1518,8 +1798,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 555,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 672,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "running_status",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1529,8 +1809,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 556,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 673,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "success_body",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1540,8 +1820,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 557,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 674,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "failure_body",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1551,8 +1831,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 558,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 675,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "template_id_fail",
           "srcTrgColDataType" : "int",
           "colFlagType" : "tgt",
@@ -1562,8 +1842,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 559,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 676,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "report_id",
           "srcTrgColDataType" : "varchar",
           "colFlagType" : "tgt",
@@ -1573,8 +1853,8 @@
           "colFormat" : "",
           "displayIndex" : 0
         }, {
-          "srcTgtColId" : 560,
-          "ruleClsPropId" : 482,
+          "srcTgtColId" : 677,
+          "ruleClsPropId" : 597,
           "srcTrgColName" : "summary_variable",
           "srcTrgColDataType" : "varbinary",
           "colFlagType" : "tgt",
@@ -1586,42 +1866,42 @@
         } ],
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 484,
+        "ruleClsPropID" : 598,
         "paramId" : 16,
         "paramMethod" : "setConnId",
         "paramValue" : "467",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 485,
+        "ruleClsPropID" : 599,
         "paramId" : 337,
         "paramMethod" : "setIsStoredProcedure",
         "paramValue" : "false",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 486,
+        "ruleClsPropID" : 600,
         "paramId" : 491,
         "paramMethod" : "setDeferredSort",
         "paramValue" : "false",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 487,
+        "ruleClsPropID" : 601,
         "paramId" : 84,
         "paramMethod" : "setOrderByStr",
-        "paramValue" : "1",
+        "paramValue" : "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
         "srcTrgTbllist" : [ ],
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 489,
+        "ruleClsPropID" : 602,
         "paramId" : 82,
         "paramMethod" : "setAppendOrderBy",
         "paramValue" : "true",
         "srcTrgTbllist" : null,
         "fileContent" : null
       }, {
-        "ruleClsPropID" : 490,
+        "ruleClsPropID" : 603,
         "paramId" : 83,
         "paramMethod" : "setColumnsMInfo",
         "paramValue" : "rule_id^~^4^~^int^~^10^~^1$~$folder_id^~^4^~^int^~^10^~^2$~$rule_code^~^12^~^varchar^~^200^~^3$~$rule_name^~^12^~^varchar^~^200^~^4$~$rule_desc^~^12^~^varchar^~^4000^~^5$~$rule_purpose^~^12^~^varchar^~^4000^~^6$~$template_id^~^4^~^int^~^10^~^7$~$rule_created_by_id^~^4^~^int^~^10^~^8$~$rule_last_modify_by_id^~^4^~^int^~^10^~^9$~$rule_create_dttm^~^93^~^datetime^~^23^~^10$~$rule_last_modify_dttm^~^93^~^datetime^~^23^~^11$~$enterprise_error_code^~^12^~^varchar^~^20^~^12$~$legal_entity_id^~^4^~^int^~^10^~^13$~$exec_node^~^12^~^varchar^~^10^~^14$~$rule_type^~^12^~^varchar^~^50^~^15$~$success_mail^~^12^~^varchar^~^4000^~^16$~$failure_mail^~^12^~^varchar^~^4000^~^17$~$success_header^~^12^~^varchar^~^2000^~^18$~$failure_header^~^12^~^varchar^~^2000^~^19$~$success_attachment_flag^~^4^~^int^~^10^~^20$~$failure_attachment_flag^~^4^~^int^~^10^~^21$~$parameter_id^~^12^~^varchar^~^450^~^22$~$rule_status^~^4^~^int^~^10^~^23$~$running_status^~^4^~^int^~^10^~^24$~$success_body^~^12^~^varchar^~^4000^~^25$~$failure_body^~^12^~^varchar^~^4000^~^26$~$template_id_fail^~^4^~^int^~^10^~^27$~$report_id^~^12^~^varchar^~^4000^~^28$~$summary_variable^~^-3^~^varbinary^~^2147483647^~^29",
@@ -1637,8 +1917,8 @@
       "thresholdExpression" : null
     } ],
     "srcTrgTbllist" : [ {
-      "srcTgtColId" : 503,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 620,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1648,8 +1928,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 504,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 621,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "folder_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1659,8 +1939,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 505,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 622,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_code",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1670,8 +1950,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 506,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 623,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_name",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1681,8 +1961,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 507,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 624,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_desc",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1692,8 +1972,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 508,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 625,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_purpose",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1703,8 +1983,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 509,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 626,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "template_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1714,8 +1994,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 510,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 627,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_created_by_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1725,8 +2005,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 511,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 628,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_last_modify_by_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1736,8 +2016,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 512,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 629,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_create_dttm",
       "srcTrgColDataType" : "datetime",
       "colFlagType" : "src",
@@ -1747,8 +2027,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 513,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 630,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_last_modify_dttm",
       "srcTrgColDataType" : "datetime",
       "colFlagType" : "src",
@@ -1758,8 +2038,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 514,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 631,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "enterprise_error_code",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1769,8 +2049,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 515,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 632,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "legal_entity_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1780,8 +2060,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 516,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 633,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "exec_node",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1791,8 +2071,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 517,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 634,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_type",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1802,8 +2082,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 518,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 635,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "success_mail",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1813,8 +2093,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 519,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 636,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "failure_mail",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1824,8 +2104,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 520,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 637,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "success_header",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1835,8 +2115,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 521,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 638,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "failure_header",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1846,8 +2126,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 522,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 639,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "success_attachment_flag",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1857,8 +2137,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 523,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 640,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "failure_attachment_flag",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1868,8 +2148,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 524,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 641,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "parameter_id",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1879,8 +2159,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 525,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 642,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "rule_status",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1890,8 +2170,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 526,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 643,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "running_status",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1901,8 +2181,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 527,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 644,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "success_body",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1912,8 +2192,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 528,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 645,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "failure_body",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1923,8 +2203,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 529,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 646,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "template_id_fail",
       "srcTrgColDataType" : "int",
       "colFlagType" : "src",
@@ -1934,8 +2214,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 530,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 647,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "report_id",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "src",
@@ -1945,8 +2225,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 531,
-      "ruleClsPropId" : 473,
+      "srcTgtColId" : 648,
+      "ruleClsPropId" : 590,
       "srcTrgColName" : "summary_variable",
       "srcTrgColDataType" : "varbinary",
       "colFlagType" : "src",
@@ -1956,8 +2236,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 532,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 649,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -1967,8 +2247,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 533,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 650,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "folder_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -1978,8 +2258,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 534,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 651,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_code",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -1989,8 +2269,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 535,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 652,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_name",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2000,8 +2280,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 536,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 653,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_desc",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2011,8 +2291,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 537,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 654,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_purpose",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2022,8 +2302,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 538,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 655,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "template_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2033,8 +2313,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 539,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 656,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_created_by_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2044,8 +2324,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 540,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 657,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_last_modify_by_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2055,8 +2335,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 541,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 658,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_create_dttm",
       "srcTrgColDataType" : "datetime",
       "colFlagType" : "tgt",
@@ -2066,8 +2346,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 542,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 659,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_last_modify_dttm",
       "srcTrgColDataType" : "datetime",
       "colFlagType" : "tgt",
@@ -2077,8 +2357,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 543,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 660,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "enterprise_error_code",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2088,8 +2368,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 544,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 661,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "legal_entity_id",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2099,8 +2379,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 545,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 662,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "exec_node",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2110,8 +2390,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 546,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 663,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_type",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2121,8 +2401,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 547,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 664,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "success_mail",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2132,8 +2412,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 548,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 665,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "failure_mail",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2143,8 +2423,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 549,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 666,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "success_header",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2154,8 +2434,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 550,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 667,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "failure_header",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2165,8 +2445,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 551,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 668,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "success_attachment_flag",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2176,8 +2456,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 552,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 669,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "failure_attachment_flag",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2187,8 +2467,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 553,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 670,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "parameter_id",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2198,8 +2478,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 554,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 671,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "rule_status",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2209,8 +2489,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 555,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 672,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "running_status",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2220,8 +2500,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 556,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 673,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "success_body",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2231,8 +2511,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 557,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 674,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "failure_body",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2242,8 +2522,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 558,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 675,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "template_id_fail",
       "srcTrgColDataType" : "int",
       "colFlagType" : "tgt",
@@ -2253,8 +2533,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 559,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 676,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "report_id",
       "srcTrgColDataType" : "varchar",
       "colFlagType" : "tgt",
@@ -2264,8 +2544,8 @@
       "colFormat" : "",
       "displayIndex" : 0
     }, {
-      "srcTgtColId" : 560,
-      "ruleClsPropId" : 482,
+      "srcTgtColId" : 677,
+      "ruleClsPropId" : 597,
       "srcTrgColName" : "summary_variable",
       "srcTrgColDataType" : "varbinary",
       "colFlagType" : "tgt",
@@ -2276,15 +2556,295 @@
       "displayIndex" : 0
     } ],
     "colMapList" : [ {
-      "colMapId" : 561,
-      "srcColId" : 503,
-      "trgColId" : 532,
+      "colMapId" : 678,
+      "srcColId" : 620,
+      "trgColId" : 649,
       "colMapType" : "join",
       "srcColName" : "rule_id",
       "tgtColName" : "rule_id",
       "colMapExpr" : "rule_id=rule_id",
       "srcTrgColMapVisible" : 1,
       "displayIndex" : 29
+    }, {
+      "colMapId" : 679,
+      "srcColId" : 621,
+      "trgColId" : 650,
+      "colMapType" : "join",
+      "srcColName" : "folder_id",
+      "tgtColName" : "folder_id",
+      "colMapExpr" : "folder_id=folder_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 30
+    }, {
+      "colMapId" : 680,
+      "srcColId" : 622,
+      "trgColId" : 651,
+      "colMapType" : "join",
+      "srcColName" : "rule_code",
+      "tgtColName" : "rule_code",
+      "colMapExpr" : "rule_code=rule_code",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 31
+    }, {
+      "colMapId" : 681,
+      "srcColId" : 623,
+      "trgColId" : 652,
+      "colMapType" : "join",
+      "srcColName" : "rule_name",
+      "tgtColName" : "rule_name",
+      "colMapExpr" : "rule_name=rule_name",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 32
+    }, {
+      "colMapId" : 682,
+      "srcColId" : 624,
+      "trgColId" : 653,
+      "colMapType" : "join",
+      "srcColName" : "rule_desc",
+      "tgtColName" : "rule_desc",
+      "colMapExpr" : "rule_desc=rule_desc",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 33
+    }, {
+      "colMapId" : 683,
+      "srcColId" : 625,
+      "trgColId" : 654,
+      "colMapType" : "join",
+      "srcColName" : "rule_purpose",
+      "tgtColName" : "rule_purpose",
+      "colMapExpr" : "rule_purpose=rule_purpose",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 34
+    }, {
+      "colMapId" : 684,
+      "srcColId" : 626,
+      "trgColId" : 655,
+      "colMapType" : "join",
+      "srcColName" : "template_id",
+      "tgtColName" : "template_id",
+      "colMapExpr" : "template_id=template_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 35
+    }, {
+      "colMapId" : 685,
+      "srcColId" : 627,
+      "trgColId" : 656,
+      "colMapType" : "join",
+      "srcColName" : "rule_created_by_id",
+      "tgtColName" : "rule_created_by_id",
+      "colMapExpr" : "rule_created_by_id=rule_created_by_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 36
+    }, {
+      "colMapId" : 686,
+      "srcColId" : 628,
+      "trgColId" : 657,
+      "colMapType" : "join",
+      "srcColName" : "rule_last_modify_by_id",
+      "tgtColName" : "rule_last_modify_by_id",
+      "colMapExpr" : "rule_last_modify_by_id=rule_last_modify_by_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 37
+    }, {
+      "colMapId" : 687,
+      "srcColId" : 629,
+      "trgColId" : 658,
+      "colMapType" : "join",
+      "srcColName" : "rule_create_dttm",
+      "tgtColName" : "rule_create_dttm",
+      "colMapExpr" : "rule_create_dttm=rule_create_dttm",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 38
+    }, {
+      "colMapId" : 688,
+      "srcColId" : 630,
+      "trgColId" : 659,
+      "colMapType" : "join",
+      "srcColName" : "rule_last_modify_dttm",
+      "tgtColName" : "rule_last_modify_dttm",
+      "colMapExpr" : "rule_last_modify_dttm=rule_last_modify_dttm",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 39
+    }, {
+      "colMapId" : 689,
+      "srcColId" : 631,
+      "trgColId" : 660,
+      "colMapType" : "join",
+      "srcColName" : "enterprise_error_code",
+      "tgtColName" : "enterprise_error_code",
+      "colMapExpr" : "enterprise_error_code=enterprise_error_code",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 40
+    }, {
+      "colMapId" : 690,
+      "srcColId" : 632,
+      "trgColId" : 661,
+      "colMapType" : "join",
+      "srcColName" : "legal_entity_id",
+      "tgtColName" : "legal_entity_id",
+      "colMapExpr" : "legal_entity_id=legal_entity_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 41
+    }, {
+      "colMapId" : 691,
+      "srcColId" : 633,
+      "trgColId" : 662,
+      "colMapType" : "join",
+      "srcColName" : "exec_node",
+      "tgtColName" : "exec_node",
+      "colMapExpr" : "exec_node=exec_node",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 42
+    }, {
+      "colMapId" : 692,
+      "srcColId" : 634,
+      "trgColId" : 663,
+      "colMapType" : "join",
+      "srcColName" : "rule_type",
+      "tgtColName" : "rule_type",
+      "colMapExpr" : "rule_type=rule_type",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 43
+    }, {
+      "colMapId" : 693,
+      "srcColId" : 635,
+      "trgColId" : 664,
+      "colMapType" : "join",
+      "srcColName" : "success_mail",
+      "tgtColName" : "success_mail",
+      "colMapExpr" : "success_mail=success_mail",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 44
+    }, {
+      "colMapId" : 694,
+      "srcColId" : 636,
+      "trgColId" : 665,
+      "colMapType" : "join",
+      "srcColName" : "failure_mail",
+      "tgtColName" : "failure_mail",
+      "colMapExpr" : "failure_mail=failure_mail",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 45
+    }, {
+      "colMapId" : 695,
+      "srcColId" : 637,
+      "trgColId" : 666,
+      "colMapType" : "join",
+      "srcColName" : "success_header",
+      "tgtColName" : "success_header",
+      "colMapExpr" : "success_header=success_header",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 46
+    }, {
+      "colMapId" : 696,
+      "srcColId" : 638,
+      "trgColId" : 667,
+      "colMapType" : "join",
+      "srcColName" : "failure_header",
+      "tgtColName" : "failure_header",
+      "colMapExpr" : "failure_header=failure_header",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 47
+    }, {
+      "colMapId" : 697,
+      "srcColId" : 639,
+      "trgColId" : 668,
+      "colMapType" : "join",
+      "srcColName" : "success_attachment_flag",
+      "tgtColName" : "success_attachment_flag",
+      "colMapExpr" : "success_attachment_flag=success_attachment_flag",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 48
+    }, {
+      "colMapId" : 698,
+      "srcColId" : 640,
+      "trgColId" : 669,
+      "colMapType" : "join",
+      "srcColName" : "failure_attachment_flag",
+      "tgtColName" : "failure_attachment_flag",
+      "colMapExpr" : "failure_attachment_flag=failure_attachment_flag",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 49
+    }, {
+      "colMapId" : 699,
+      "srcColId" : 641,
+      "trgColId" : 670,
+      "colMapType" : "join",
+      "srcColName" : "parameter_id",
+      "tgtColName" : "parameter_id",
+      "colMapExpr" : "parameter_id=parameter_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 50
+    }, {
+      "colMapId" : 700,
+      "srcColId" : 642,
+      "trgColId" : 671,
+      "colMapType" : "join",
+      "srcColName" : "rule_status",
+      "tgtColName" : "rule_status",
+      "colMapExpr" : "rule_status=rule_status",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 51
+    }, {
+      "colMapId" : 701,
+      "srcColId" : 643,
+      "trgColId" : 672,
+      "colMapType" : "join",
+      "srcColName" : "running_status",
+      "tgtColName" : "running_status",
+      "colMapExpr" : "running_status=running_status",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 52
+    }, {
+      "colMapId" : 702,
+      "srcColId" : 644,
+      "trgColId" : 673,
+      "colMapType" : "join",
+      "srcColName" : "success_body",
+      "tgtColName" : "success_body",
+      "colMapExpr" : "success_body=success_body",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 53
+    }, {
+      "colMapId" : 703,
+      "srcColId" : 645,
+      "trgColId" : 674,
+      "colMapType" : "join",
+      "srcColName" : "failure_body",
+      "tgtColName" : "failure_body",
+      "colMapExpr" : "failure_body=failure_body",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 54
+    }, {
+      "colMapId" : 704,
+      "srcColId" : 646,
+      "trgColId" : 675,
+      "colMapType" : "join",
+      "srcColName" : "template_id_fail",
+      "tgtColName" : "template_id_fail",
+      "colMapExpr" : "template_id_fail=template_id_fail",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 55
+    }, {
+      "colMapId" : 705,
+      "srcColId" : 647,
+      "trgColId" : 676,
+      "colMapType" : "join",
+      "srcColName" : "report_id",
+      "tgtColName" : "report_id",
+      "colMapExpr" : "report_id=report_id",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 56
+    }, {
+      "colMapId" : 706,
+      "srcColId" : 648,
+      "trgColId" : 677,
+      "colMapType" : "join",
+      "srcColName" : "summary_variable",
+      "tgtColName" : "summary_variable",
+      "colMapExpr" : "summary_variable=summary_variable",
+      "srcTrgColMapVisible" : 1,
+      "displayIndex" : 57
     } ],
     "objectVOList" : null,
     "srcCount" : null,
